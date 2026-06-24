@@ -4,7 +4,7 @@ supported_targets:
 
 extensions:
   avocado-bsp-reterminal-dm:
-    version: 2024.1.0
+    version: 0.1.0
     release: r0
     summary: Board support for the ReTerminal DM
     description: Board support for the ReTerminal DM
@@ -16,7 +16,7 @@ extensions:
       - sysext
       - confext
 
-    overlay: bsp/reterminal-dm/overlay
+    overlay: overlay
 
     modprobe:
       - gpio-pca953x
@@ -98,4 +98,4 @@ extensions:
       kernel-module-videodev: '*'
 
 sdk:
-  image: docker.io/avocadolinux/sdk:{{ env.AVOCADO_DISTRO_RELEASE }}-{{ env.AVOCADO_DISTRO_CHANNEL }}
+  image: docker.io/avocadolinux/sdk:{{ env.AVOCADO_DISTRO_RELEASE }}
