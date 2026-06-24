@@ -16,7 +16,7 @@ extensions:
       - sysext
       - confext
 
-    overlay: bsp/reterminal-dm/overlay
+    overlay: overlay
 
     modprobe:
       - gpio-pca953x
